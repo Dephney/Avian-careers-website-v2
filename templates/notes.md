@@ -1,0 +1,1 @@
+1.we used a variable to get data from a list -to dynamically render data on a template. We could also use an API to return data dynamically.instead of returning html we can return json
