@@ -10,19 +10,25 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
-      
+      padding-bottom:16px;
     }
   </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="https://avian-careers-website.dephney.repl.co/static/banner.jpg" alt="banner" height="320">
     <div class="container">
     <h1 class="text-center mt-4 mb-4">Avian Careers</h1>
-    <img class="img-fluid" id="banner" src="https://avian-careers-website.dephney.repl.co/static/banner.jpg" alt="banner" height="320">
-    <h2 class="text-center mt-2 mb-4">About Avian</h2>
-    <p class="lead">
-  
-  Ipsum dolor sit amet consectetur adipiscing elit ut. Nunc consequat interdum varius sit amet. Elit ut aliquam purus sit amet. Tellus in metus vulputate eu scelerisque felis imperdiet. Est sit amet facilisis magna etiam tempor orci. Blandit aliquam etiam erat velit scelerisque in dictum. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Mattis aliquam faucibus purus in massa. Sit amet nisl purus in mollis nunc sed. In dictum non consectetur a erat nam. Sit amet dictum sit amet justo donec enim.
-</p>
+    <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
+          <p class="lead">
+    Ipsum dolor sit amet consectetur adipiscing elit ut. Nunc consequat interdum varius sit amet. Elit ut aliquam purus sit amet. Tellus in metus vulputate eu scelerisque felis imperdiet. Est sit amet facilisis magna etiam tempor orci. Blandit aliquam etiam erat velit scelerisque in dictum. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Mattis aliquam faucibus purus in massa. Sit amet nisl purus in mollis nunc sed. In dictum non consectetur a erat nam. Sit amet dictum sit amet justo donec enim.
+          </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+         <img src="/static/people.jpg" style="height:360px;border-radius:4px;">
+        </div>
+    </div>
     <h2 class="text-center mt-2 mb-4">Open Vacancies</h2>
       <div stye="margin-bottom: 16px;">
         <!-- passing dynamic data into an html template -->
@@ -31,9 +37,9 @@
         {% endfor %}
       </div>
       <div class="text-center">
-      <button class="btn btn-primary btn-lg" >Contact Us</button>
-      <p class="mt-4">Copyright 2023, Avian</p>
+      <a href="mailto:avian@avian.com" class="btn btn-primary btn-lg" >Contact Us</a>
     </div>
     </div>
+    {% include 'footer.html'%}
   </body>
 </html>
